@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicaMedica
 {
-    public abstract class Pessoa
+    abstract class Pessoa
     {
 
         private string cpf;
@@ -41,7 +41,6 @@ namespace ClinicaMedica
                 { cpf = "___.___.___-__"; }
             }
         }
-
         public string Nome
         {
             get
@@ -54,17 +53,18 @@ namespace ClinicaMedica
                 nome = value;
             }
         }
-
+        public Pessoa(string nome, string cpf)
+        {
+            this.Nome = nome;
+            this.Cpf = cpf;
+        }
         public virtual double ValorConsulta(Consulta consulta)
         {
             return consulta.ValorFinal();
         }
-
         public virtual string ExtratoConsulta()
         {
-            string extrato = "";
-            return extrato;
+            return consultas.ToString();
         }
-
     }
 }

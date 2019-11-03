@@ -8,6 +8,7 @@ namespace ClinicaMedica
 {
     class Agendada : Consulta, IValoravel
     {
+        public Agendada(DateTime data, Pessoa medico) : base(data, medico) { }
         public double Valor()
         {
             return 0;
@@ -17,6 +18,5 @@ namespace ClinicaMedica
         {
             return 0;
         }
-
     }
 }

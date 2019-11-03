@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace ClinicaMedica
 {
-    public class Cliente : Pessoa
+    abstract class Cliente : Pessoa
     {
+        public Cliente(string nome, string cpf) : base(nome, cpf) { }
         public override double ValorConsulta(Consulta consulta)
         {
-            return 0;
+            return consulta.ValorFinal();
         }
 
         public override string ExtratoConsulta()
         {
-            return "";
+            return "Paciente: {}\nCPF: {}\n";
         }
     }
 }

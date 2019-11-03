@@ -9,9 +9,13 @@ namespace ClinicaMedica
     class Medico : Pessoa
     {
         private IValoravel especialidade;
-        public override double ValorConsulta(Consulta consulta)
+        public Medico(IValoravel especialidade, string nome, string cpf) : base(nome, cpf)
         {
-            return 0;
+            this.especialidade = especialidade;
+        }
+        public double ValorConsulta()
+        {
+            return especialidade.Valor();
         }
     }
 }

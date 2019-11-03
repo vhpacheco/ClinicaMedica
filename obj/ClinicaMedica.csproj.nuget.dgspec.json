@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/victor/Área de Trabalho/TI/ClinicaMedica/ClinicaMedica.csproj": {}
+    "/home/victor/Área de Trabalho/ClinicaMedica/ClinicaMedica.csproj": {}
   },
   "projects": {
-    "/home/victor/Área de Trabalho/TI/ClinicaMedica/ClinicaMedica.csproj": {
+    "/home/victor/Área de Trabalho/ClinicaMedica/ClinicaMedica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/victor/Área de Trabalho/TI/ClinicaMedica/ClinicaMedica.csproj",
+        "projectUniqueName": "/home/victor/Área de Trabalho/ClinicaMedica/ClinicaMedica.csproj",
         "projectName": "ClinicaMedica",
-        "projectPath": "/home/victor/Área de Trabalho/TI/ClinicaMedica/ClinicaMedica.csproj",
+        "projectPath": "/home/victor/Área de Trabalho/ClinicaMedica/ClinicaMedica.csproj",
         "packagesPath": "/home/victor/.nuget/packages/",
-        "outputPath": "/home/victor/Área de Trabalho/TI/ClinicaMedica/obj/",
+        "outputPath": "/home/victor/Área de Trabalho/ClinicaMedica/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
