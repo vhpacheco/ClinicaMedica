@@ -11,9 +11,9 @@ namespace ClinicaMedica
         //Convenio com cobertura de 100%
         protected const double desconto = 1;
         public Convenio(string nome, string cpf) : base(nome, cpf) { }
-        public override double ValorConsulta(Consulta consulta)
+        public override double valorConsulta(Consulta consulta)
         {
-            return consulta.ValorFinal();
+            return consulta.valorFinal();
         }
     }
 }

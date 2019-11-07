@@ -8,6 +8,6 @@ namespace ClinicaMedica
 {
     public interface IValoravel
     {
-        double Valor();
+        double valor();
     }
 }

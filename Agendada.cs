@@ -9,12 +9,12 @@ namespace ClinicaMedica
     class Agendada : Consulta, IValoravel
     {
         public Agendada(DateTime data, Pessoa medico) : base(data, medico) { }
-        public double Valor()
+        public double valor()
         {
             return 0;
         }
 
-        public double ValorFinal(Consulta consulta)
+        public override double valorFinal()
         {
             return 0;
         }

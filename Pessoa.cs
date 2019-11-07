@@ -8,12 +8,9 @@ namespace ClinicaMedica
 {
     abstract class Pessoa
     {
-
-        private string cpf;
-        private string nome;
         protected List<Consulta> consultas = new List<Consulta>();
 
-        public string Cpf
+        public string cpf
         {
             get
             {
@@ -41,7 +38,7 @@ namespace ClinicaMedica
                 { cpf = "___.___.___-__"; }
             }
         }
-        public string Nome
+        public string nome
         {
             get
             {
@@ -55,14 +52,14 @@ namespace ClinicaMedica
         }
         public Pessoa(string nome, string cpf)
         {
-            this.Nome = nome;
-            this.Cpf = cpf;
+            this.nome = nome;
+            this.cpf = cpf;
         }
-        public virtual double ValorConsulta(Consulta consulta)
+        public virtual double valorConsulta(Consulta consulta)
         {
-            return consulta.ValorFinal();
+            return 0;
         }
-        public virtual string ExtratoConsulta()
+        public virtual string extratoConsulta()
         {
             return consultas.ToString();
         }

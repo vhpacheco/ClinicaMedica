@@ -15,9 +15,6 @@ namespace ClinicaMedica
             this.data = data;
             this.medico = medico;
         }
-        public double ValorFinal()
-        {
-            return 0;
-        }
+        public abstract double valorFinal();
     }
 }

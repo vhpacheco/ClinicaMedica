@@ -9,7 +9,7 @@ namespace ClinicaMedica
     class ClinicaGeral : IValoravel
     {
         protected const double valorConsulta = 80;
-        public double Valor()
+        public double valor()
         {
             return valorConsulta;
         }

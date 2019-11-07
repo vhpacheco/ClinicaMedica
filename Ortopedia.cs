@@ -9,7 +9,7 @@ namespace ClinicaMedica
     class Ortopedia : IValoravel
     {
         protected const double valorConsulta = 130;
-        public double Valor()
+        public double valor()
         {
             return valorConsulta;
         }

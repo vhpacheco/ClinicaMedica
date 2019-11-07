@@ -9,7 +9,7 @@ namespace ClinicaMedica
     class Otorrino : IValoravel
     {
         protected const double valorConsulta = 150;
-        public double Valor()
+        public double valor()
         {
             return valorConsulta;
         }

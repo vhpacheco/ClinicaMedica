@@ -9,12 +9,8 @@ namespace ClinicaMedica
     abstract class Cliente : Pessoa
     {
         public Cliente(string nome, string cpf) : base(nome, cpf) { }
-        public override double ValorConsulta(Consulta consulta)
-        {
-            return consulta.ValorFinal();
-        }
 
-        public override string ExtratoConsulta()
+        public override string extratoConsulta()
         {
             return "Paciente: {}\nCPF: {}\n";
         }
