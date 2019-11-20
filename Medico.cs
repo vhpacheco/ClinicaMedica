@@ -13,9 +13,14 @@ namespace ClinicaMedica
         {
             this.especialidade = especialidade;
         }
-        public override double valorConsulta()
+        public override double valorConsulta(Consulta consulta)
         {
-            return especialidade.valor();
+            return 0;
+        }
+
+        public override string extratoConsulta()
+        {
+            return "";
         }
     }
 }

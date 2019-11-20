@@ -13,7 +13,7 @@ namespace ClinicaMedica
 
         public override double valorConsulta(Consulta consulta)
         {
-            return base.valorConsulta(consulta) * desconto;
+            return 0;
         }
     }
 }

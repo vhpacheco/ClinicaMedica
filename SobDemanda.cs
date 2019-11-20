@@ -8,7 +8,8 @@ namespace ClinicaMedica
 {
     class SobDemanda : Consulta, IValoravel
     {
-        public SobDemanda(Pessoa medico) : base(DateTime.Now, medico) { }
+        // Pessoa medico,int tipo, Pessoa paciente, DateTime data
+        public SobDemanda(Pessoa medico, Pessoa paciente) : base(medico, paciente, DateTime.Now ) { }
         public double valor()
         {
             return 0;

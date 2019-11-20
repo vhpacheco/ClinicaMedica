@@ -13,7 +13,7 @@ namespace ClinicaMedica
         public Convenio(string nome, string cpf) : base(nome, cpf) { }
         public override double valorConsulta(Consulta consulta)
         {
-            return consulta.valorFinal();
+            return consulta.valorFinal() - (consulta.valorFinal()*desconto);
         }
     }
 }

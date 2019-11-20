@@ -1,0 +1,16 @@
+PACIENTES - CPF;NOME;TIPO
+10000227;Alan Barros Gabriel;1
+
+Tipo: 0 (sem convênio), 1 (convênio total), 2 (coparticipação)
+
+========================
+MÉDICOS - CRM;NOME;ESPECIALIDADE
+10126;Alan Silva Gabriel;3
+
+Especialidade: 1 (Geral), 2 (Otorrino), 3 (Ortopedia)
+
+========================
+CONSULTAS - ESPECIALIDADE;  TIPO;   PACIENTE;   MÉDICO; DATA
+3;2;10092948;11357;16/07/2019
+
+Tipo: 1 (agendada), 2 (sob demanda)

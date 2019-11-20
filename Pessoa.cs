@@ -8,7 +8,7 @@ namespace ClinicaMedica
 {
     abstract class Pessoa
     {
-        protected List<Consulta> consultas = new List<Consulta>();
+        protected List<Consulta> consultas;
 
         public string cpf
         {
@@ -54,14 +54,9 @@ namespace ClinicaMedica
         {
             this.nome = nome;
             this.cpf = cpf;
+            consultas = new List<Consulta>();
         }
-        public virtual double valorConsulta(Consulta consulta)
-        {
-            return 0;
-        }
-        public virtual string extratoConsulta()
-        {
-            return consultas.ToString();
-        }
+        public abstract double valorConsulta(Consulta consulta);
+        public abstract string extratoConsulta();
     }
 }

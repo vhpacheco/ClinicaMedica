@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicaMedica
 {
-    class Otorrino : IValoravel
+    public class Otorrino : IValoravel
     {
         protected const double valorConsulta = 150;
         public double valor()
